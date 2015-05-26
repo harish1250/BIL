@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Parallel Run Suite" parallel="classes"  thread-count="3">
+    <test name="Test-1">
+      
+        <parameter name="BROWSER" value="FF" />
+        <classes>
+            <class name="parallel_test.Parallelexecution" />
+        </classes>
+    </test>
+   
+    <test name="Test-2">
+    
+        <parameter name="BROWSER" value="CH" />
+        <classes>
+            <class name="parallel_test.Parallelexecution" />
+        </classes>
+    </test>
+   
+    
+   
+</suite>
