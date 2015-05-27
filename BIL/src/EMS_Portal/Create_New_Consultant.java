@@ -20,7 +20,7 @@ public class Create_New_Consultant {
 
 	public WebDriver driver;
 	private static String url = "http://192.168.1.190/ems";
-	String Path = "D:\\Hari\\BIL.WS\\BIL\\src\\Data_Repo\\EMS.xls";
+	String Path = "D:\\Hari\\GIT\\GitHub\\BIL\\src\\Data_Repo\\EMS.xls";
 
 	@BeforeTest
 	public void setUp() throws Exception {
