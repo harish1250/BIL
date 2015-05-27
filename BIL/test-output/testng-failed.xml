@@ -6,7 +6,7 @@
       <class name="EMS_Portal.Create_New_Consultant">
         <methods>
           <include name="setUp"/>
-          <include name="login_page"/>
+          <include name="testDataProviderExample"/>
         </methods>
       </class> <!-- EMS_Portal.Create_New_Consultant -->
     </classes>
