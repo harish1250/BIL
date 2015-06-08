@@ -128,7 +128,7 @@ public class test {
 		Select Rec = new Select(driver.findElement(By.id("ddlRecruiter")));
 		Rec.selectByVisibleText(Recruiter);
 
-		Thread.sleep(500L);
+		Thread.sleep(500L);//
 		
 		Select Rec_src = new Select(driver.findElement(By
 				.cssSelector("#ddlRecuSource")));
