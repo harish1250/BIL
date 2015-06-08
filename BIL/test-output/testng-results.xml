@@ -1,104 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18808" started-at="2015-05-27T05:35:17Z" finished-at="2015-05-27T05:35:36Z">
+  <suite name="Default suite" duration-ms="53014" started-at="2015-06-08T11:40:30Z" finished-at="2015-06-08T11:41:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18808" started-at="2015-05-27T05:35:17Z" finished-at="2015-05-27T05:35:36Z">
-      <class name="EMS_Portal.Create_New_Consultant">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:EMS_Portal.Create_New_Consultant@19a0c7c]" name="setUp" is-config="true" duration-ms="9470" started-at="2015-05-27T11:05:17Z" finished-at="2015-05-27T11:05:27Z">
+    <test name="Default test" duration-ms="53014" started-at="2015-06-08T11:40:30Z" finished-at="2015-06-08T11:41:23Z">
+      <class name="Test.test">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Test.test@17e6a96]" name="setUp" is-config="true" duration-ms="35086" started-at="2015-06-08T17:10:30Z" finished-at="2015-06-08T17:11:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EMS_Portal.Create_New_Consultant@19a0c7c]" name="testDataProviderExample" duration-ms="8289" started-at="2015-05-27T11:05:28Z" data-provider="DP1" finished-at="2015-05-27T11:05:36Z">
+        <test-method status="PASS" signature="testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.test@17e6a96]" name="testDataProviderExample" duration-ms="9383" started-at="2015-06-08T17:11:06Z" data-provider="DP1" finished-at="2015-06-08T17:11:15Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="2">
               <value>
                 <![CDATA[Hari]]>
               </value>
             </param>
-            <param index="3">
+            <param index="1">
               <value>
                 <![CDATA[Nath]]>
               </value>
             </param>
-            <param index="4">
+            <param index="2">
               <value>
                 <![CDATA[9959857144]]>
               </value>
             </param>
-            <param index="5">
+            <param index="3">
               <value>
                 <![CDATA[hari@gmail.com]]>
               </value>
             </param>
-            <param index="6">
+            <param index="4">
               <value>
                 <![CDATA[30]]>
               </value>
             </param>
+            <param index="5">
+              <value>
+                <![CDATA[3+]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[3+]]>
+              </value>
+            </param>
             <param index="7">
-              <value>
-                <![CDATA[3+]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3+]]>
-              </value>
-            </param>
-            <param index="9">
               <value>
                 <![CDATA[Andhra Pradesh]]>
               </value>
             </param>
-            <param index="10">
+            <param index="8">
               <value>
                 <![CDATA[Hyd]]>
               </value>
             </param>
-            <param index="11">
+            <param index="9">
               <value>
                 <![CDATA[30000]]>
               </value>
             </param>
-            <param index="12">
+            <param index="10">
               <value>
                 <![CDATA[Monthly]]>
               </value>
             </param>
-            <param index="13">
+            <param index="11">
               <value>
                 <![CDATA[Permanent]]>
               </value>
             </param>
-            <param index="14">
+            <param index="12">
               <value>
-                <![CDATA[Infokall India DB]]>
+                <![CDATA[Bartronics India]]>
               </value>
             </param>
-            <param index="15">
+            <param index="13">
               <value>
                 <![CDATA[pre_location]]>
               </value>
             </param>
-            <param index="16">
+            <param index="14">
+              <value>
+                <![CDATA[C,C++,JAVA]]>
+              </value>
+            </param>
+            <param index="15">
               <value>
                 <![CDATA[Admin Bartronics]]>
               </value>
             </param>
-            <param index="17">
+            <param index="16">
               <value>
                 <![CDATA[Sourcing]]>
               </value>
@@ -107,7 +102,102 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataProviderExample -->
-      </class> <!-- EMS_Portal.Create_New_Consultant -->
+        <test-method status="PASS" signature="testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.test@17e6a96]" name="testDataProviderExample" duration-ms="7971" started-at="2015-06-08T17:11:15Z" data-provider="DP1" finished-at="2015-06-08T17:11:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Griri]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nath]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9959857144]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hari@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3+]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[3+]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Andhra Pradesh]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Hyd]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[30000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Monthly]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Permanent]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Bartronics India]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[pre_location]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Admin Bartronics]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Sourcing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProviderExample -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Test.test@17e6a96]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-06-08T17:11:23Z" finished-at="2015-06-08T17:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -12,6 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -22,7 +25,7 @@ public class Create_New_Consultant {
 	private static String url = "http://192.168.1.190/ems";
 	String Path = "D:\\Hari\\GIT\\GitHub\\BIL\\src\\Data_Repo\\EMS.xls";
 
-	@BeforeTest
+	@BeforeClass
 	public void setUp() throws Exception {
 
 		System.setProperty("webdriver.chrome.driver",
@@ -37,9 +40,14 @@ public class Create_New_Consultant {
 		driver.get(url);
 	}
 
+	
 	@DataProvider(name = "DP1")
 	public Object[][] createData1() throws Exception {
+		
+		
 		Object[][] retObjArr = getTableArray(Path, "ems", "Start", "End");
+		
+		
 		return (retObjArr);
 	}
 
@@ -124,8 +132,12 @@ public class Create_New_Consultant {
 		
 	}
 
+	
+	
 	public String[][] getTableArray(String xlFilePath, String sheetName,
 			String tableStartName, String tableEndName) throws Exception {
+		
+	
 		String[][] tabArray = null;
 
 		Workbook workbook = Workbook.getWorkbook(new File(xlFilePath));
@@ -135,8 +147,10 @@ public class Create_New_Consultant {
 		startRow = tableStart.getRow();
 		startCol = tableStart.getColumn();
 
-		Cell tableEnd = sheet.findCell(tableEndName, startCol + 1,
-				startRow + 1, 100, 100, false);
+//		Cell tableEnd = sheet.findCell(tableEndName, startCol + 1,
+//				startRow + 1, 100, 100, false);
+		
+		Cell tableEnd= sheet.findCell(tableEndName, startCol+1,startRow+1, 100, 64000,  false);  
 
 		endRow = tableEnd.getRow();
 		endCol = tableEnd.getColumn();
@@ -152,5 +166,12 @@ public class Create_New_Consultant {
 
 		return (tabArray);
 	}
+	
+	
+/*	@AfterClass
+    public void tearDown(){
+        driver.close();
+       // selenium.stop();
+    } */
 
 }

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="EMS_Portal.Create_New_Consultant">
+      <class name="Test.test">
         <methods>
+          <include name="testDataProviderExample" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="testDataProviderExample"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- EMS_Portal.Create_New_Consultant -->
+      </class> <!-- Test.test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
