@@ -114,7 +114,8 @@ public class test {
 		Salary_Type.selectByVisibleText(Sal_Type);
 
 		/* Marketing Details */
-
+		
+		/* Marketing Details */
 		Select group = new Select(driver.findElement(By.id("ddlGroup")));
 		group.selectByVisibleText(groups);
 
