@@ -37,6 +37,7 @@ public class test {
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		driver = new ChromeDriver(capabilities);
 		driver.get("http://192.168.1.190/ems");
+		/* Enter Login page details */
 		driver.findElement(By.id("txtUserName")).clear();
 		driver.findElement(By.id("txtUserName")).sendKeys("admin");
 		driver.findElement(By.id("txtPassword")).clear();
@@ -44,6 +45,7 @@ public class test {
 		driver.findElement(By.id("btnLogin")).click();
 		Thread.sleep(500L);
 
+		
 		/* Home screen -- Navigate to new consultent */
 
 		driver.switchTo().frame(driver.findElement(By.name("Contents")));
@@ -60,7 +62,7 @@ public class test {
 	public Object[][] createData1() throws Exception {
 
 		Object[][] retObjArr = getTableArray(
-				"D:\\Hari\\GIT\\GitHub\\BIL\\src\\Data_Repo\\EMS.xls", "gmail",
+				"D:\\Hari\\GIT\\GitHub\\BIL\\src\\Data_Repo\\EMS.xls", "ems",
 				"Start", "End");
 
 		return (retObjArr);
@@ -71,12 +73,9 @@ public class test {
 			String Mobileno, String EmailId, String NCPeriod, String Exp,
 			String Rev_Exp, String state, String City, String Salary,
 			String sal_period, String Sal_Type, String groups,
-			String pre_location, String Skills, String Recruiter, String Rec_source)
-			throws Exception {
+			String pre_location, String Skills, String Recruiter,
+			String Rec_source) throws Exception {
 
-		/* Enter Login page details */
-
-		Thread.sleep(5000L);
 		/* Enter personal employee details */
 
 		driver.findElement(By.id("txtfname")).clear();
@@ -113,15 +112,13 @@ public class test {
 				.id("ddlSalaryType")));
 		Salary_Type.selectByVisibleText(Sal_Type);
 
-	
-		
 		/* Marketing Details */
 		Select group = new Select(driver.findElement(By.id("ddlGroup")));
 		group.selectByVisibleText(groups);
 
 		driver.findElement(By.id("txtprelocation")).clear();
 		driver.findElement(By.id("txtprelocation")).sendKeys(pre_location);
-		
+
 		driver.findElement(By.id("txtSkills")).clear();
 		driver.findElement(By.id("txtSkills")).sendKeys(Skills);
 
@@ -129,20 +126,19 @@ public class test {
 		Rec.selectByVisibleText(Recruiter);
 
 		Thread.sleep(500L);//
-		
+
 		Select Rec_src = new Select(driver.findElement(By
 				.cssSelector("#ddlRecuSource")));
 		Rec_src.selectByVisibleText(Rec_source);
-		
-
 
 		Thread.sleep(500L);
-		//driver.findElement(By.id("btnSubmit")).click();
+	driver.findElement(By.id("btnSubmit")).click();
+	driver.findElement(By.id("btnEMS")).click();
 	}
 
 	@AfterClass
 	public void tearDown() {
-		// driver.close();
+	// driver.close();
 		// selenium.stop();
 	}
 
